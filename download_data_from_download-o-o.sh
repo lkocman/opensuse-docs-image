@@ -63,7 +63,7 @@ for key in "${!filelists[@]}"; do
     entry_name=`grep $key package_names.txt | awk '{ print $NF }'`
     rpm_path=`echo $key | sed "s/^.//"`
     if [ ! -f "download/cache/$entry_rpm" ]; then
-        wget -P download/cache https://download.opensuse.org/distribution/leap/15.6/repo/oss/$rpm_path
+        wget -P download/cache https://download.opensuse.org/tumbleweed/repo/oss/$rpm_path
     fi
     for path in ${filelists[$key]}; do
         cachedir="`pwd`/download/cache"
