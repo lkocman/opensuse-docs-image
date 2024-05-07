@@ -1,0 +1,7 @@
+filtered_arches.txt
+matched_files.txt
+package_names.txt
+ARCHIVES
+ARCHIVES.gz
+ARCHIVES.GZ
+*.swp
